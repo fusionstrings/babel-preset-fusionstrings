@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = () => ({
 	presets: [
 		[
 			require('@babel/preset-env'),
@@ -9,14 +9,16 @@ module.exports = {
 				debug: true,
 				targets: {
 					node: 'current',
-					browsers: ['last 2 versions', '> 5%n']
+					browsers: ['last 2 versions', '> 5%']
 				}
 			}
 		],
-		require('@babel/preset-react')
+		require('@babel/preset-react'),
+		require('@babel/preset-stage-3')
 	],
 	plugins: [
 		require('@babel/plugin-syntax-dynamic-import'),
-		require('@babel/plugin-proposal-class-properties')
+		require('@babel/plugin-proposal-class-properties'),
+		require('@babel/plugin-proposal-object-rest-spread')
 	]
-};
+});

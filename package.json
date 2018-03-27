@@ -1,5 +1,5 @@
 {
-  "name": "@fusionstrings/babel-preset-babel",
+  "name": "@fusionstrings/babel-preset-fusionstrings",
   "version": "1.0.0",
   "description": "Opinionated Babel 7 preset",
   "main": "index.js",
@@ -9,8 +9,11 @@
   "dependencies": {
     "@babel/core": "^7.0.0-beta.42",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.42",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.42",
+    "@babel/polyfill": "^7.0.0-beta.42",
     "@babel/preset-env": "^7.0.0-beta.42",
-    "@babel/preset-react": "^7.0.0-beta.42"
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "@babel/preset-stage-3": "^7.0.0-beta.42"
   }
 }
