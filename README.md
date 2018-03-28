@@ -9,7 +9,7 @@ I want to reuse my openionated babel setting most of the time.
 ## How to use
 
 ### Install
-- `npm install --save-dev @fusionstrings/babel-preset-fusionstrings``
+- `npm install --save-dev @fusionstrings/babel-preset-fusionstrings`
 
 ### Add in .babelrc
 ```json
