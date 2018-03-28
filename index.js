@@ -1,9 +1,9 @@
-module.exports = () => ({
+module.exports = (api, opts) => ({
 	presets: [
 		[
 			require('@babel/preset-env'),
 			{
-				modules: !process.env.NODE_ENV === 'test',
+				modules: opts.modules || false,
 				useBuiltIns: 'usage',
 				spec: true,
 				debug: true,
