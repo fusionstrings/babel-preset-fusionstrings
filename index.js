@@ -3,22 +3,22 @@ module.exports = (api, opts) => ({
 		[
 			require('@babel/preset-env'),
 			{
-				modules: opts.modules || false,
+				modules: api.env('test') ? 'commonjs' : false,
 				useBuiltIns: 'usage',
 				spec: true,
 				debug: true,
 				targets: {
-					node: 'current',
-					browsers: ['last 2 versions', '> 5%']
-				}
+					browsers: ['>= 1%']
+				},
+				...opts
 			}
 		],
-		require('@babel/preset-react'),
-		require('@babel/preset-stage-3')
+		require('@babel/preset-react')
 	],
 	plugins: [
-		require('@babel/plugin-syntax-dynamic-import'),
 		require('@babel/plugin-proposal-class-properties'),
-		require('@babel/plugin-proposal-object-rest-spread')
+		require('@babel/plugin-proposal-json-strings'),
+		require('@babel/plugin-syntax-dynamic-import'),
+		require('@babel/plugin-syntax-import-meta')
 	]
 });
