@@ -1,5 +1,9 @@
 # @fusionstrings/babel-preset-fusionstrings
+<<<<<<< HEAD
 Babel preset targetted for node js and browser environments
+=======
+Babel preset targetted for node js environment for rollup
+>>>>>>> master
 
 ## Why?
 I want to reuse my openionated babel setting most of the time.
