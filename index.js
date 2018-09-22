@@ -7,9 +7,6 @@ module.exports = (api, opts) => ({
 				useBuiltIns: 'usage',
 				spec: true,
 				debug: true,
-				targets: {
-					browsers: ['>= 1%']
-				},
 				...opts
 			}
 		],

@@ -1,18 +1,18 @@
 {
-  "name": "@comeon/babel-preset-comeon",
+  "name": "@fusionstrings/babel-preset-fusionstrings",
   "version": "1.0.0",
   "description": "Opinionated Babel 7 preset",
   "main": "index.js",
-  "repository": "https://github.com/comeon-stockholm/babel-preset-comeon.git",
-  "author": "Dilip Kr. Shukla <dilip.shukla@comeon.com>",
+  "repository": "https://github.com/fusionstrings/babel-preset-fusionstrings.git",
+  "author": "Dilip Kr. Shukla <contact@fusionstrings.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-json-strings": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0"
   }
 }
