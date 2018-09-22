@@ -1,5 +1,5 @@
 # @fusionstrings/babel-preset-fusionstrings
-Babel preset targetted for node js environment for rollup
+Babel preset targetted for node js and browser environments
 
 ## Why?
 I want to reuse my openionated babel setting most of the time.
