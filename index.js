@@ -1,8 +1,4 @@
-module.exports = (api, {node = false, browser = true, ...opts}) => {
-	const targets = {
-		...(node ? { node: 'current' } : {}),
-		...(browser ? {browsers: ['>= 1%']} : {})
-	}
+module.exports = (api, {env={}, ...options}) => {
 	return {
 		presets: [
 			[
@@ -12,17 +8,18 @@ module.exports = (api, {node = false, browser = true, ...opts}) => {
 					useBuiltIns: 'usage',
 					spec: true,
 					debug: true,
-					targets,
-					...opts
+					...env
 				}
 			],
 			require('@babel/preset-react')
 		],
 		plugins: [
+			require('@babel/plugin-external-helpers'),
 			require('@babel/plugin-proposal-class-properties'),
 			require('@babel/plugin-proposal-json-strings'),
 			require('@babel/plugin-syntax-dynamic-import'),
 			require('@babel/plugin-syntax-import-meta')
-		]
+		],
+		...options
 	}
 };
