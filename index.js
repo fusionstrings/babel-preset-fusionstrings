@@ -14,7 +14,6 @@ module.exports = (api, {env={}, ...options}) => {
 			require('@babel/preset-react')
 		],
 		plugins: [
-			require('@babel/plugin-external-helpers'),
 			require('@babel/plugin-proposal-class-properties'),
 			require('@babel/plugin-proposal-json-strings'),
 			require('@babel/plugin-syntax-dynamic-import'),
