@@ -1,6 +1,6 @@
 {
   "name": "@fusionstrings/babel-preset-fusionstrings",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Opinionated Babel 7 preset",
   "main": "index.js",
   "repository": "https://github.com/fusionstrings/babel-preset-fusionstrings.git",
