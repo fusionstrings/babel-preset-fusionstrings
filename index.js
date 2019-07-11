@@ -4,7 +4,7 @@ module.exports = (api, options) => {
     modules = "auto",
     shippedProposals = true,
     spec = true,
-    useBuiltIns = "entry"
+    useBuiltIns = "usage"
   } = options;
 
   return {
