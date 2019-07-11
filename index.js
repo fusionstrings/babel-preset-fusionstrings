@@ -4,7 +4,8 @@ module.exports = (api, options) => {
     modules = "auto",
     shippedProposals = true,
     spec = true,
-    useBuiltIns = "usage"
+    useBuiltIns = "usage",
+    targets
   } = options;
 
   return {
@@ -16,6 +17,7 @@ module.exports = (api, options) => {
           modules,
           shippedProposals,
           spec,
+          targets,
           useBuiltIns,
           corejs: {
             version: 3,
